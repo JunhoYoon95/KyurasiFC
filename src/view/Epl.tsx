@@ -40,6 +40,9 @@ const Epl = () => {
         console.error(error);
       }
     }
+    useEffect(() => {
+        handleClick(); // Execute when the component mounts
+    }, []); // Empty dependency array ensures this effect runs once
     const formatSeoulTime = (timeString: string) => {
       const seoulTime = new Date(timeString);
       const formattedTime = new Intl.DateTimeFormat('en-US', {
@@ -55,15 +58,15 @@ const Epl = () => {
       return formattedTime;
     };
     return (
-      <div className="App">
+      <div className="Epl" style={{marginTop: "30px"}}>
         {/* <Store info={myFC} changeAddress={changeAddress}></Store> */}
         <h1>
-          Axios Fetch the scores Board - Junmannn
+          Scoring Fetch board 
         </h1>
         <div>
-          <h2>EPL Scoring table:</h2>
+          <h2>EPL League table</h2>
         </div>
-        <button onClick={handleClick}>Fetch Data</button>
+        <button style={{marginTop: "30px"}} onClick={handleClick}>Fetch Data</button>
         <table style={{
             width:"80%",
             marginLeft:"10%",
