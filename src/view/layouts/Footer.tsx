@@ -6,8 +6,8 @@ const Footer = () => {
           <div className="container-fluid text-center text-md-left">
             <div className="row">
                 <div className="col-md-6 mt-md-0 mt-3"  style={{ width: "40%", margin: '0 auto' }}>
-                    <h5 className="text-uppercase">Who I am</h5>
-                    <p >Collaboration and continuous improvement are values I prioritize. I believe that achieving project goals and delivering value to users is best accomplished through excellent communication skills and seamless teamwork with colleagues. Additionally, I strive for ongoing enhancement of development practices and code quality through thorough code reviews and feedback.</p>
+                    <h5 className="text-uppercase">Code</h5>
+                    <p >Collaboration and continuous improvement are values I prioritize.</p>
                 </div>
 
                 <hr className="clearfix w-100 d-md-none pb-0"/>
