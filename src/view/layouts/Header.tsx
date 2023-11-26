@@ -21,9 +21,7 @@ const Header = () => {
                     <Nav className="ms-3">
                         <NavDropdown title="Movie" id="movie-dropdown">
                             <NavDropdown.Item href="/movie">Movie</NavDropdown.Item>
-                            <NavDropdown.Item href="/ligue_1">Ligue 1</NavDropdown.Item>
-                            <NavDropdown.Item href="/bundesliga">Bundesliga</NavDropdown.Item>
-                            <NavDropdown.Item href="/laliga">Laliga</NavDropdown.Item>
+                            <NavDropdown.Item href="/k-movie">K-Movie</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>

@@ -7,6 +7,7 @@ import Ligue1 from './view/Ligue1';
 import Bundesliga from './view/Bundesliga';
 import Laliga from './view/Laliga';
 import Movie from './view/Movie';
+import KoreanMovie from './view/KoreanMovie';
 
 const App: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const App: React.FC = () => {
           <Route path="/bundesliga" element={<Bundesliga />} />
           <Route path="/laliga" element={<Laliga />} />
           <Route path="/movie" element={<Movie />} />
+          <Route path="/k-movie" element={<KoreanMovie />} />
         </Routes>
       </div>
     </BrowserRouter>
