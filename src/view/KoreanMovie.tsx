@@ -61,10 +61,11 @@ const KoreanMovie = () => {
 
     const [movies, setMovies] = useState<MovieData[]>([]);
     const handleClick = async () => {
+        console.log("날짜 : ", formattedDate)
         const options = {
             method: 'GET',
-            url: 'http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchWeeklyBoxOfficeList.json?key=0a8372c28d538b61ed294b191ad1fb30&targetDt='+formattedDate+'&weekGb=0'
-            // url: 'http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchWeeklyBoxOfficeList.json?key=0a8372c28d538b61ed294b191ad1fb30&targetDt=20231102'
+            url: 'https://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchWeeklyBoxOfficeList.json?key=0a8372c28d538b61ed294b191ad1fb30&targetDt='+formattedDate+'&weekGb=0&repNationCd=K'
+            // url: 'http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchWeeklyBoxOfficeList.json?key=0a8372c28d538b61ed294b191ad1fb30&targetDt='+formattedDate+'&weekGb=0&repNationCd=K'
         };
         try{
             const response = await axios.request(options);

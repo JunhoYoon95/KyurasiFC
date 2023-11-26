@@ -25,6 +25,13 @@ const Header = () => {
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
+                <Navbar.Collapse id="navbar-billboard">
+                    <Nav className="ms-3">
+                        <NavDropdown title="Billboard" id="billboard-dropdown">
+                            <NavDropdown.Item href="/billboard">Hot 100</NavDropdown.Item>
+                        </NavDropdown>
+                    </Nav>
+                </Navbar.Collapse>
                
             </Container>
         </Navbar>
