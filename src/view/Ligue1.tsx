@@ -74,7 +74,19 @@ const Ligue1 = () => {
                 <td>{score.home_team}</td>
                 <td>{score.away_team}</td>
                 <td>{formatSeoulTime(score.commence_time)}</td>
-                <td>{score.scores && score.scores.length > 0 ? score.scores[0].score : 'N'} : {score.scores && score.scores.length > 0 ? score.scores[1].score : 'N'}</td>
+                <td>                  {score.scores ? (
+                    // Check if scores exist
+                    score.scores[0] ? (
+                      // Check if scores[0] exists
+                      `${score.scores[0].score} : ${score.scores[1].score}`
+                    ) : (
+                      // scores[0] does not exist, meaning "경기 전"
+                      "경기 전"
+                    )
+                  ) : (
+                    // scores array is null, meaning "경기 전"
+                    "경기 전"
+                  )}</td>
               </tr>
             ))}
           </tbody>
